@@ -42,7 +42,7 @@ const Tools = ({ productsPromise }) => {
   );
 
   return (
-    <div className="mt-25 container mx-auto px-6 lg:px-0">
+    <div className="mt-25 pb-[120px] container mx-auto px-6 lg:px-0">
       {/* Header */}
       <div className="text-center space-y-3">
         <h2 className="text-4xl font-bold">Premium Digital Tools</h2>

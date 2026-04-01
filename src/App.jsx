@@ -4,6 +4,8 @@ import Activity from "./components/Activity";
 import Tools from "./components/Tools";
 import Process from "./components/Process";
 import Pricing from "./components/Pricing";
+import Workflow from "./components/Workflow";
+import Footer from "./components/Footer";
 
 // API fetch
 const getData = async () => {
@@ -22,6 +24,8 @@ function App() {
       <Tools productsPromise={productsPromise} />
       <Process />
       <Pricing />
+      <Workflow />
+      <Footer />
     </>
   );
 }
