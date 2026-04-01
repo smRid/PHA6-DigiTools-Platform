@@ -53,7 +53,7 @@ const Navbar = ({ cartCount = 0 }) => {
         >
           Login
         </a>
-        <button className="bg-linear-to-r from-violet-800 to-violet-500 text-white lg:font-semibold font-medium lg:py-3 lg:px-5 p-2.5 rounded-full lg:text-lg text-sm cursor-pointer shadow-md shadow-violet-300/40 hover:shadow-lg hover:shadow-violet-400/50 hover:scale-[1.04] active:scale-[0.98] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2">
+        <button className="hidden lg:inline-flex bg-linear-to-r from-violet-800 to-violet-500 text-white font-semibold py-3 px-5 rounded-full text-lg cursor-pointer shadow-md shadow-violet-300/40 hover:shadow-lg hover:shadow-violet-400/50 hover:scale-[1.04] active:scale-[0.98] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2">
           Get Started
         </button>
 
@@ -103,10 +103,18 @@ const Navbar = ({ cartCount = 0 }) => {
             <a
               href="#login"
               onClick={() => setMobileOpen(false)}
-              className="block py-3 text-black/80 font-medium transition-colors duration-200 hover:text-violet-700 hover:pl-2 focus:text-violet-700 focus:outline-none"
+              className="block py-3 text-black/80 font-medium border-b border-gray-100 transition-colors duration-200 hover:text-violet-700 hover:pl-2 focus:text-violet-700 focus:outline-none"
             >
               Login
             </a>
+          </li>
+          <li className="pt-3 pb-1">
+            <button
+              onClick={() => setMobileOpen(false)}
+              className="w-full bg-linear-to-r from-violet-800 to-violet-500 text-white font-semibold py-3 rounded-full text-sm cursor-pointer shadow-md shadow-violet-300/40 hover:shadow-lg hover:shadow-violet-400/50 active:scale-[0.98] transition-all duration-200"
+            >
+              Get Started
+            </button>
           </li>
         </ul>
       </div>
