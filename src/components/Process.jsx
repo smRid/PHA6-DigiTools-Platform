@@ -6,7 +6,7 @@ const Process = () => {
     <section id="steps" className="py-30 px-6 bg-[#F9FAFC]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-3">
+          <h2 className="text-2xl md:text-5xl font-extrabold text-gray-900 mb-3">
             Get Started In 3 Steps
           </h2>
           <p className="text-gray-400 text-sm md:text-base">

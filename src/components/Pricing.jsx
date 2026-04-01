@@ -55,7 +55,7 @@ const Pricing = () => {
     <section id="pricing" className="py-30 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-3">
+          <h2 className="text-2xl md:text-5xl font-extrabold text-gray-900 mb-3">
             Simple, Transparent Pricing
           </h2>
           <p className="text-gray-400 text-sm md:text-base">
