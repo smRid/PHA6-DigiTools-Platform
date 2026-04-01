@@ -44,7 +44,7 @@ function App() {
 
   const handleCheckout = useCallback(() => {
     setCartItems([]);
-    toast.success("🎉 Order placed successfully!");
+    toast.success("Order placed successfully! 🎉");
   }, []);
 
   return (
