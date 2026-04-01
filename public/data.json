@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "https://i.ibb.co.com/zTJBjmD7/AIWriting-Pro.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "2000+ templates",
+      "Monthly updates",
+      "Commercial license"
+    ],
+    "icon": "https://i.ibb.co.com/M56Kx058/Design-Templates-Pack.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "10M+ assets",
+      "Commercial use",
+      "No attribution"
+    ],
+    "icon": "https://i.ibb.co.com/ZRRzJ834/Premium-Stock-Assets.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 79,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "50+ automations",
+      "API access",
+      "Custom workflows"
+    ],
+    "icon": "https://i.ibb.co.com/zWSm5zdS/Automation-Toolkit.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters that land interviews.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "https://i.ibb.co.com/fYxR66yT/Resume-Builder-Pro.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "5000+ assets",
+      "Scheduler included",
+      "Analytics dashboard"
+    ],
+    "icon": "https://i.ibb.co.com/fdQN7fVX/Social-Media-Content-Kit.png"
+  },
+  {
+    "id": 7,
+    "name": "Video Editing Suite",
+    "description": "Create stunning videos with professional-grade editing tools and effects.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "4K video support",
+      "100+ effects & transitions",
+      "Multi-track editing"
+    ],
+    "icon": "https://i.ibb.co.com/6c4mXzZ/video-editing.png"
+  },
+  {
+    "id": 8,
+    "name": "AI Image Generator",
+    "description": "Generate unique AI-powered images and artwork instantly from text prompts.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "popular",
+    "features": [
+      "Text-to-image generation",
+      "High-resolution output",
+      "Style customization"
+    ],
+    "icon": "https://i.ibb.co.com/3yZ9w2M/ai-image.png"
+  },
+  {
+    "id": 9,
+    "name": "Website Builder Pro",
+    "description": "Build modern, responsive websites بسهولة without coding knowledge.",
+    "price": 45,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Drag & drop builder",
+      "SEO optimization",
+      "Free hosting included"
+    ],
+    "icon": "https://i.ibb.co.com/2q3m8Xv/web-builder.png"
+  },
+  {
+    "id": 10,
+    "name": "Email Marketing Toolkit",
+    "description": "Design, send, and track email campaigns with advanced analytics and automation.",
+    "price": 35,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Email templates",
+      "Automation workflows",
+      "Performance tracking"
+    ],
+    "icon": "https://i.ibb.co.com/Z8Yh8gT/email-marketing.png"
+  }
+
+
+]
+
