@@ -1,6 +1,15 @@
-import Banner from "./components/Banner/Banner";
-import Navbar from "./components/Navbar/Navbar";
-import Activity from "./components/Activity/Activity";
+import Banner from "./components/Banner";
+import Navbar from "./components/Navbar";
+import Activity from "./components/Activity";
+import Tools from "./components/Tools";
+
+// API fetch
+const getData = async () => {
+  const res = await fetch("/data.json");
+  return res.json();
+};
+
+const productsPromise = getData();
 
 function App() {
   return (
@@ -8,6 +17,7 @@ function App() {
       <Navbar />
       <Banner />
       <Activity />
+      <Tools productsPromise={productsPromise} />
     </>
   );
 }
