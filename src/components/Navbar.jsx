@@ -2,7 +2,7 @@ import { Menu, ShoppingCart, X } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Products", href: "#products" },
+  { label: "Products", href: "#tools" },
   { label: "Features", href: "#features" },
   { label: "Pricing", href: "#pricing" },
   { label: "Testimonials", href: "#testimonials" },

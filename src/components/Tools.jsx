@@ -13,12 +13,18 @@ const periodLabel = {
   "one-time": "/One-Time",
 };
 
-const Tools = ({ productsPromise, cartItems, onAddToCart, onRemoveFromCart, onCheckout }) => {
+const Tools = ({
+  productsPromise,
+  cartItems,
+  onAddToCart,
+  onRemoveFromCart,
+  onCheckout,
+}) => {
   const tools = use(productsPromise);
   const [activeTab, setActiveTab] = useState("products");
 
   return (
-    <div className="mt-25 pb-[120px] container mx-auto px-6 lg:px-0">
+    <div id="tools" className="mt-25 pb-[120px] container mx-auto px-6 lg:px-0">
       {/* Header */}
       <div className="text-center space-y-3">
         <h2 className="text-4xl font-bold">Premium Digital Tools</h2>
