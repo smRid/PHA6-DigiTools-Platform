@@ -1,6 +1,12 @@
 import { Check } from "lucide-react";
 
-const ProductCard = ({ tool, tagStyles, periodLabel, onAddToCart, isInCart }) => {
+const ProductCard = ({
+  tool,
+  tagStyles,
+  periodLabel,
+  onAddToCart,
+  isInCart,
+}) => {
   const handlePurchasing = () => {
     if (isInCart) return;
     onAddToCart(tool);

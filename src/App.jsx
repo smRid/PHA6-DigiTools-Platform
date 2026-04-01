@@ -2,6 +2,7 @@ import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
 import Activity from "./components/Activity";
 import Tools from "./components/Tools";
+import Process from "./components/Process";
 
 // API fetch
 const getData = async () => {
@@ -18,6 +19,7 @@ function App() {
       <Banner />
       <Activity />
       <Tools productsPromise={productsPromise} />
+      <Process />
     </>
   );
 }
