@@ -1,8 +1,6 @@
-import React, { use, useState, useCallback } from "react";
+import React, { use, useState } from "react";
 import ProductCard from "../ui/ProductCard";
 import Cart from "../ui/Cart";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 const tagStyles = {
   "best-seller": "bg-yellow-100 text-yellow-600",
@@ -15,31 +13,9 @@ const periodLabel = {
   "one-time": "/One-Time",
 };
 
-const Tools = ({ productsPromise }) => {
+const Tools = ({ productsPromise, cartItems, onAddToCart, onRemoveFromCart, onCheckout }) => {
   const tools = use(productsPromise);
   const [activeTab, setActiveTab] = useState("products");
-  const [cartItems, setCartItems] = useState([]);
-
-  const handleAddToCart = useCallback(
-    (tool) => {
-      const alreadyAdded = cartItems.find((item) => item.id === tool.id);
-      if (alreadyAdded) {
-        toast.warn("Already added to Cart!");
-        return;
-      }
-      setCartItems([...cartItems, tool]);
-      toast.success("Added to Cart!");
-    },
-    [cartItems],
-  );
-
-  const handleRemoveFromCart = useCallback(
-    (id) => {
-      setCartItems(cartItems.filter((item) => item.id !== id));
-      toast.info("Removed from Cart");
-    },
-    [cartItems],
-  );
 
   return (
     <div className="mt-25 pb-[120px] container mx-auto px-6 lg:px-0">
@@ -85,16 +61,18 @@ const Tools = ({ productsPromise }) => {
               tool={tool}
               tagStyles={tagStyles}
               periodLabel={periodLabel}
-              onAddToCart={handleAddToCart}
+              onAddToCart={onAddToCart}
               isInCart={cartItems.some((item) => item.id === tool.id)}
             />
           ))}
         </div>
       ) : (
-        <Cart cartItems={cartItems} onRemove={handleRemoveFromCart} />
+        <Cart
+          cartItems={cartItems}
+          onRemove={onRemoveFromCart}
+          onCheckout={onCheckout}
+        />
       )}
-
-      <ToastContainer position="top-right" autoClose={2000} />
     </div>
   );
 };

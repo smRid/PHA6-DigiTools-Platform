@@ -9,7 +9,7 @@ const navLinks = [
   { label: "FAQ", href: "#faq" },
 ];
 
-const Navbar = () => {
+const Navbar = ({ cartCount = 0 }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -38,9 +38,14 @@ const Navbar = () => {
       <div className="navbar-end flex items-center gap-5">
         <button
           aria-label="Shopping cart"
-          className="hidden lg:flex items-center justify-center p-2 rounded-full transition-colors duration-200 hover:bg-violet-50 hover:text-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-300 cursor-pointer"
+          className="relative hidden lg:flex items-center justify-center p-2 rounded-full transition-colors duration-200 hover:bg-violet-50 hover:text-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-300 cursor-pointer"
         >
           <ShoppingCart size={20} />
+          {cartCount > 0 && (
+            <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center bg-violet-600 text-white text-[10px] font-bold rounded-full px-1 animate-[bounce_0.3s_ease-in-out]">
+              {cartCount}
+            </span>
+          )}
         </button>
         <a
           href="#login"
@@ -52,7 +57,19 @@ const Navbar = () => {
           Get Started
         </button>
 
-        {/* Mobile Hamburger */}
+        {/* Mobile Cart + Hamburger */}
+        <button
+          aria-label="Shopping cart"
+          className="relative lg:hidden flex items-center justify-center p-2 rounded-full transition-colors duration-200 hover:bg-violet-50 hover:text-violet-700 cursor-pointer"
+        >
+          <ShoppingCart size={20} />
+          {cartCount > 0 && (
+            <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center bg-violet-600 text-white text-[10px] font-bold rounded-full px-1">
+              {cartCount}
+            </span>
+          )}
+        </button>
+
         <button
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           onClick={() => setMobileOpen((prev) => !prev)}

@@ -102,7 +102,7 @@
       "100+ effects & transitions",
       "Multi-track editing"
     ],
-    "icon": "https://i.ibb.co.com/6c4mXzZ/video-editing.png"
+    "icon": "https://i.ibb.co.com/zTJBjmD7/AIWriting-Pro.png"
   },
   {
     "id": 8,
@@ -117,7 +117,7 @@
       "High-resolution output",
       "Style customization"
     ],
-    "icon": "https://i.ibb.co.com/3yZ9w2M/ai-image.png"
+    "icon": "https://i.ibb.co.com/M56Kx058/Design-Templates-Pack.png"
   },
   {
     "id": 9,
@@ -132,22 +132,7 @@
       "SEO optimization",
       "Free hosting included"
     ],
-    "icon": "https://i.ibb.co.com/2q3m8Xv/web-builder.png"
-  },
-  {
-    "id": 10,
-    "name": "Email Marketing Toolkit",
-    "description": "Design, send, and track email campaigns with advanced analytics and automation.",
-    "price": 35,
-    "period": "monthly",
-    "tag": "New",
-    "tagType": "new",
-    "features": [
-      "Email templates",
-      "Automation workflows",
-      "Performance tracking"
-    ],
-    "icon": "https://i.ibb.co.com/Z8Yh8gT/email-marketing.png"
+    "icon": "https://i.ibb.co.com/zWSm5zdS/Automation-Toolkit.png"
   }
 
 
