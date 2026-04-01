@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Activity from "./components/Activity";
 import Tools from "./components/Tools";
 import Process from "./components/Process";
+import Pricing from "./components/Pricing";
 
 // API fetch
 const getData = async () => {
@@ -20,6 +21,7 @@ function App() {
       <Activity />
       <Tools productsPromise={productsPromise} />
       <Process />
+      <Pricing />
     </>
   );
 }
